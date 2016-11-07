@@ -26,7 +26,10 @@ public class movingPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
+        if(moveSpeed<100){
+			moveSpeed+=0.3f;
+		}
+		grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
 
         myRigidBody.velocity = new Vector2(moveSpeed, myRigidBody.velocity.y);
 

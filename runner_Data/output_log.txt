@@ -14,19 +14,19 @@ Platform assembly: C:\Users\Thoby Gabriel\Documents\GitHub\GameAdbo-TugasAkhir\r
 Loading C:\Users\Thoby Gabriel\Documents\GitHub\GameAdbo-TugasAkhir\runner_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Thoby Gabriel\Documents\GitHub\GameAdbo-TugasAkhir\runner_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Thoby Gabriel\Documents\GitHub\GameAdbo-TugasAkhir\runner_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.051 seconds
+- Completed reload, in  0.054 seconds
 Platform assembly: C:\Users\Thoby Gabriel\Documents\GitHub\GameAdbo-TugasAkhir\runner_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Thoby Gabriel\Documents\GitHub\GameAdbo-TugasAkhir\runner_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.293793 ms
+UnloadTime: 0.732734 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.218092 ms
+UnloadTime: 5.116704 ms
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 346.
-Total: 2.883044 ms (FindLiveObjects: 0.027990 ms CreateObjectMapping: 0.031100 ms MarkObjects: 2.793474 ms  DeleteObjects: 0.009330 ms)
+Total: 0.269954 ms (FindLiveObjects: 0.034521 ms CreateObjectMapping: 0.032966 ms MarkObjects: 0.194380 ms  DeleteObjects: 0.003732 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 268c -> priority: 1 
+  Thread -> id: 16dc -> priority: 1 
