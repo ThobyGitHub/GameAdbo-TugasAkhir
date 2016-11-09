@@ -66,6 +66,8 @@
     <Compile Include="Assets\Script\GroundDestroyer.cs" />
     <Compile Include="Assets\Script\GroundGenerator.cs" />
     <Compile Include="Assets\Script\MainMenu.cs" />
+    <Compile Include="Assets\Script\Obstacle.cs" />
+    <Compile Include="Assets\Script\Over.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Script\ScoreManager.cs" />
     <Compile Include="Assets\Script\cameraMovement.cs" />
