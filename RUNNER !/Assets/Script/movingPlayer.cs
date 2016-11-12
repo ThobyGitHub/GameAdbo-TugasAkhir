@@ -3,11 +3,12 @@ using System.Collections;
 
 public class movingPlayer : MonoBehaviour
 {
-    public float moveSpeed;
-    public float jumpForce;
-    public AudioSource jumpSound;
-    public bool grounded = true;
-    public LayerMask whatIsGround;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private AudioSource jumpSound;
+    [SerializeField] private bool grounded;
+    [SerializeField] private bool gameOver;
+    [SerializeField] private LayerMask whatIsGround;
 
     private Rigidbody2D myRigidBody;
     private Collider2D myCollider;
@@ -16,6 +17,8 @@ public class movingPlayer : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        this.grounded = true;
+        this.gameOver = false;
         myRigidBody = GetComponent<Rigidbody2D>();
 
         myCollider = GetComponent<Collider2D>();
@@ -58,7 +61,8 @@ public class movingPlayer : MonoBehaviour
     {
         if (other.gameObject.name == "New Sprite")
         {
-            Debug.Log("COLLIDED!");
+            this.myRigidBody.constraints = RigidbodyConstraints2D.FreezeAll;
+            this.gameOver = true;
         }
     }
 }

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/endlessRun5.unity
+- path: C:/Users/user/Documents/RUNNER !/Assets/Scene/endlessRun5.unity
   isLoaded: 1
   isActive: 1

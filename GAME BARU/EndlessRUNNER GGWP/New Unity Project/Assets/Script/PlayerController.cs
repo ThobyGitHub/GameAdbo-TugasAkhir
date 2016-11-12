@@ -3,19 +3,19 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 	
-	public float moveSpeed;
-	public float speedMultiply;
+	[SerializeField] private float moveSpeed;
+	[SerializeField] private float speedMultiply;
 
-	public float speedIncreaseMilestone;
+	[SerializeField] private float speedIncreaseMilestone;
 	private float speedMilestoneCount;
 
 
-	public float jumpForce;
+	[SerializeField] private float jumpForce;
 
-	public bool isGround;
-	public LayerMask whatIsGround;
+	[SerializeField] private bool isGround;
+	[SerializeField] private LayerMask whatIsGround;
 
-	public float jumpTime;
+	[SerializeField] private float jumpTime;
 	private float jumpTimeCounter;
 
 	private Rigidbody2D myRigidBody;
