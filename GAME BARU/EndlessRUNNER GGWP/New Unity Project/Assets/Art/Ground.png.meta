@@ -1,0 +1,307 @@
+fileFormatVersion: 2
+guid: 00f168c1a540889489bec51d1b75bc9b
+timeCreated: 1478790866
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ground_0
+    21300002: Ground_1
+    21300004: Ground_2
+    21300006: Ground_3
+    21300008: Ground_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 128
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Ground_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 835
+        width: 2048
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1024, y: 85}
+        - {x: -1024, y: -85}
+        - {x: 1024, y: -85}
+        - {x: 1024, y: 85}
+    - name: Ground_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 2048
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1024, y: 85}
+        - {x: -1024, y: -85}
+        - {x: 1024, y: -85}
+        - {x: 1024, y: 85}
+    - name: Ground_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 2048
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1024, y: 85}
+        - {x: -1024, y: -85}
+        - {x: 1024, y: -85}
+        - {x: 1024, y: 85}
+    - name: Ground_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 2048
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -975, y: -110}
+        - {x: -963, y: -112}
+        - {x: -946, y: -114}
+        - {x: -929, y: -115}
+        - {x: -845, y: -115}
+        - {x: -814, y: -114}
+        - {x: -791, y: -113}
+        - {x: -773, y: -112}
+        - {x: -757, y: -111}
+        - {x: -738, y: -110}
+        - {x: -716, y: -109}
+        - {x: -684, y: -108}
+        - {x: -683, y: -107}
+        - {x: -642, y: -107}
+        - {x: -641, y: -108}
+        - {x: -624, y: -109}
+        - {x: -608, y: -112}
+        - {x: -594, y: -114}
+        - {x: -575, y: -115}
+        - {x: -549, y: -115}
+        - {x: -524, y: -114}
+        - {x: -497, y: -112}
+        - {x: -472, y: -109}
+        - {x: -471, y: -108}
+        - {x: -432, y: -108}
+        - {x: -431, y: -109}
+        - {x: -410, y: -111}
+        - {x: -395, y: -113}
+        - {x: -378, y: -116}
+        - {x: -365, y: -116}
+        - {x: -351, y: -115}
+        - {x: -339, y: -114}
+        - {x: -287, y: -109}
+        - {x: -286, y: -108}
+        - {x: -268, y: -109}
+        - {x: -258, y: -112}
+        - {x: -248, y: -114}
+        - {x: -233, y: -116}
+        - {x: -180, y: -116}
+        - {x: -150, y: -115}
+        - {x: -149, y: -114}
+        - {x: -98, y: -113}
+        - {x: -97, y: -112}
+        - {x: -49, y: -111}
+        - {x: 1, y: -109}
+        - {x: 29, y: -108}
+        - {x: 60, y: -107}
+        - {x: 61, y: -106}
+        - {x: 102, y: -106}
+        - {x: 103, y: -107}
+        - {x: 112, y: -108}
+        - {x: 129, y: -109}
+        - {x: 154, y: -110}
+        - {x: 189, y: -110}
+        - {x: 190, y: -111}
+        - {x: 329, y: -111}
+        - {x: 346, y: -110}
+        - {x: 370, y: -109}
+        - {x: 371, y: -108}
+        - {x: 403, y: -108}
+        - {x: 404, y: -107}
+        - {x: 445, y: -107}
+        - {x: 446, y: -106}
+        - {x: 499, y: -106}
+        - {x: 500, y: -105}
+        - {x: 578, y: -105}
+        - {x: 579, y: -104}
+        - {x: 668, y: -104}
+        - {x: 669, y: -105}
+        - {x: 692, y: -106}
+        - {x: 700, y: -107}
+        - {x: 714, y: -108}
+        - {x: 752, y: -110}
+        - {x: 802, y: -116}
+        - {x: 848, y: -116}
+        - {x: 861, y: -114}
+        - {x: 879, y: -111}
+        - {x: 912, y: -106}
+        - {x: 939, y: -105}
+        - {x: 940, y: -106}
+        - {x: 947, y: -107}
+        - {x: 958, y: -108}
+        - {x: 995, y: -108}
+        - {x: 996, y: -109}
+        - {x: 1024, y: -111}
+        - {x: 1024, y: 113}
+        - {x: 1007, y: 114}
+        - {x: 975, y: 114}
+        - {x: 974, y: 115}
+        - {x: 938, y: 115}
+        - {x: 916, y: 114}
+        - {x: 904, y: 113}
+        - {x: 886, y: 111}
+        - {x: 855, y: 107}
+        - {x: 854, y: 106}
+        - {x: 819, y: 106}
+        - {x: 818, y: 107}
+        - {x: 774, y: 111}
+        - {x: 755, y: 113}
+        - {x: 743, y: 114}
+        - {x: 730, y: 115}
+        - {x: 712, y: 116}
+        - {x: 655, y: 116}
+        - {x: 635, y: 115}
+        - {x: 610, y: 113}
+        - {x: 588, y: 111}
+        - {x: 574, y: 110}
+        - {x: 556, y: 109}
+        - {x: 526, y: 108}
+        - {x: 525, y: 107}
+        - {x: 468, y: 107}
+        - {x: 467, y: 108}
+        - {x: 430, y: 108}
+        - {x: 429, y: 109}
+        - {x: 403, y: 110}
+        - {x: 334, y: 113}
+        - {x: 305, y: 114}
+        - {x: 242, y: 114}
+        - {x: 225, y: 113}
+        - {x: 204, y: 111}
+        - {x: 185, y: 110}
+        - {x: 161, y: 109}
+        - {x: 160, y: 110}
+        - {x: 139, y: 111}
+        - {x: 113, y: 113}
+        - {x: 82, y: 116}
+        - {x: 1, y: 116}
+        - {x: -4, y: 115}
+        - {x: -29, y: 109}
+        - {x: -46, y: 107}
+        - {x: -59, y: 106}
+        - {x: -60, y: 105}
+        - {x: -144, y: 105}
+        - {x: -145, y: 106}
+        - {x: -172, y: 107}
+        - {x: -218, y: 109}
+        - {x: -245, y: 110}
+        - {x: -304, y: 110}
+        - {x: -317, y: 109}
+        - {x: -342, y: 108}
+        - {x: -361, y: 107}
+        - {x: -362, y: 108}
+        - {x: -393, y: 108}
+        - {x: -394, y: 109}
+        - {x: -413, y: 110}
+        - {x: -458, y: 113}
+        - {x: -485, y: 115}
+        - {x: -501, y: 116}
+        - {x: -551, y: 116}
+        - {x: -552, y: 115}
+        - {x: -603, y: 115}
+        - {x: -604, y: 114}
+        - {x: -659, y: 114}
+        - {x: -660, y: 113}
+        - {x: -730, y: 113}
+        - {x: -731, y: 112}
+        - {x: -816, y: 112}
+        - {x: -817, y: 113}
+        - {x: -840, y: 114}
+        - {x: -857, y: 115}
+        - {x: -874, y: 115}
+        - {x: -892, y: 114}
+        - {x: -914, y: 112}
+        - {x: -927, y: 111}
+        - {x: -928, y: 110}
+        - {x: -987, y: 110}
+        - {x: -988, y: 111}
+        - {x: -1010, y: 113}
+        - {x: -1024, y: 114}
+        - {x: -1024, y: -116}
+        - {x: -1017, y: -116}
+        - {x: -1007, y: -111}
+        - {x: -999, y: -110}
+        - {x: -998, y: -109}
+    - name: Ground_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2048
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1024, y: 85}
+        - {x: -1024, y: -85}
+        - {x: 1024, y: -85}
+        - {x: 1024, y: 85}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
