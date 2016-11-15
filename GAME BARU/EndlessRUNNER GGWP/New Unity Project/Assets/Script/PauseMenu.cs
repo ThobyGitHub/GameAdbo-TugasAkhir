@@ -14,11 +14,13 @@ public class PauseMenu : MonoBehaviour {
 	public void restart(){
 		Time.timeScale = 1f;
 		pauseMenu.gameObject.SetActive (false);
+		SceneManager.LoadScene ("GGWP");
 		FindObjectOfType<GameGenerator> ().RestartGame ();
 	}
 	public void backToMainMenu(){
 		Time.timeScale = 1f;
-		SceneManager.LoadScene ("GGWP");
+		SceneManager.LoadScene ("Main menu");
+		pauseMenu.gameObject.SetActive (false);
 	}
 	public void quit(){
 		Application.Quit();

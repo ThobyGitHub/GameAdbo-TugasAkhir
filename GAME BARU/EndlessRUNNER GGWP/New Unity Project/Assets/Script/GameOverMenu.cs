@@ -5,11 +5,12 @@ using System.Collections;
 public class GameOverMenu : MonoBehaviour {
 	
 	public void restart(){
+		SceneManager.LoadScene ("GGWP");
 		FindObjectOfType<GameGenerator> ().RestartGame ();
 	}
 
 	public void backToMainMenu(){		
-		SceneManager.LoadScene ("GGWP");
+		SceneManager.LoadScene ("Main menu");
 	}
 
 	public void quit(){

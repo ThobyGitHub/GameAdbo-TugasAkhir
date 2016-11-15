@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.tag == "Obstacle") {
             Debug.Log("collidded");
             //theGameManager.RestartGame ();
-            SceneManager.LoadScene("Main menu");
+			SceneManager.LoadScene("Game Over");
 		}
 	}
 
