@@ -65,7 +65,10 @@
   <ItemGroup>
     <Compile Include="Assets\Script\CameraController.cs" />
     <Compile Include="Assets\Script\GameGenerator.cs" />
+    <Compile Include="Assets\Script\GameOverMenu.cs" />
+    <Compile Include="Assets\Script\MainMenu.cs" />
     <Compile Include="Assets\Script\ObjectPooler.cs" />
+    <Compile Include="Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Script\PlatformDestroyer.cs" />
     <Compile Include="Assets\Script\PlatformGenerator.cs" />
     <Compile Include="Assets\Script\PlayerController.cs" />
