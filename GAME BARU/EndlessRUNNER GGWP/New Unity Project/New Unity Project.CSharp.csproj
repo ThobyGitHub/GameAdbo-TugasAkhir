@@ -68,6 +68,7 @@
     <Compile Include="Assets\Script\GameOverMenu.cs" />
     <Compile Include="Assets\Script\MainMenu.cs" />
     <Compile Include="Assets\Script\ObjectPooler.cs" />
+    <Compile Include="Assets\Script\Obstacle.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Script\PlatformDestroyer.cs" />
     <Compile Include="Assets\Script\PlatformGenerator.cs" />

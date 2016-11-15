@@ -7,7 +7,7 @@ public class GameGenerator : MonoBehaviour {
 
 	public PlayerController thePlayer;
 	private Vector3 playerStartPoint;
-
+    private PlatformDestroyer[] platformList;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +28,11 @@ public class GameGenerator : MonoBehaviour {
 	public IEnumerator RestartGameCo(){
 		thePlayer.gameObject.SetActive (false);
 		yield return new WaitForSeconds (0.5f);
+        platformList = FindObjectsOfType<PlatformDestroyer>();
+        for (int i = 0; i < platformList.Length; i++) {
+            platformList[i].gameObject.SetActive(false);
+        }
+
 		thePlayer.transform.position = playerStartPoint;
 		platformGenerator.position = platformStartPoint;
 		thePlayer.gameObject.SetActive (true);

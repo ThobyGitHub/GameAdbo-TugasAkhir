@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
@@ -24,17 +25,19 @@ public class PlayerController : MonoBehaviour {
 
 	public GameGenerator theGameManager;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 		myRigidBody = GetComponent<Rigidbody2D>();
 		myCollider = GetComponent<Collider2D> ();
 		myAnimator = GetComponent<Animator> ();
 		jumpTimeCounter = jumpTime;
 		speedMilestoneCount = speedIncreaseMilestone;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 		isGround = Physics2D.IsTouchingLayers (myCollider,whatIsGround);
 
 		if (transform.position.x > speedMilestoneCount) {
@@ -65,9 +68,13 @@ public class PlayerController : MonoBehaviour {
 		myAnimator.SetBool ("isGround", isGround);
 	}
 
-	void OnCollisionEnter2d(Collision2D other){
-		if (other.gameObject.tag == "killBox") {
-			theGameManager.RestartGame ();
+	void OnCollisionEnter2D(Collision2D other){
+		if (other.gameObject.tag == "Obstacle") {
+            Debug.Log("collidded");
+            //theGameManager.RestartGame ();
+            SceneManager.LoadScene("Main menu");
 		}
 	}
+
+   
 }
