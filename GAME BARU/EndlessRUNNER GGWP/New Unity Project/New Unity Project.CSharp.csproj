@@ -63,12 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\BackgroundScrollScript.cs" />
     <Compile Include="Assets\Script\CameraController.cs" />
     <Compile Include="Assets\Script\GameGenerator.cs" />
     <Compile Include="Assets\Script\GameOverMenu.cs" />
     <Compile Include="Assets\Script\MainMenu.cs" />
     <Compile Include="Assets\Script\ObjectPooler.cs" />
     <Compile Include="Assets\Script\Obstacle.cs" />
+    <Compile Include="Assets\Script\ObstacleDestroyer.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Script\PlatformDestroyer.cs" />
     <Compile Include="Assets\Script\PlatformGenerator.cs" />

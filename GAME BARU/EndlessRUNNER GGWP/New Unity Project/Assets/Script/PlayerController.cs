@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
 	[SerializeField] private float jumpForce;
 
 	[SerializeField] private bool isGround;
+	[SerializeField] private bool isBow;
 	[SerializeField] private LayerMask whatIsGround;
 
 	[SerializeField] private float jumpTime;
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour {
 		myAnimator = GetComponent<Animator> ();
 		jumpTimeCounter = jumpTime;
 		speedMilestoneCount = speedIncreaseMilestone;
-
+        this.isBow = false;
     }
 
     // Update is called once per frame
@@ -61,16 +62,26 @@ public class PlayerController : MonoBehaviour {
 			jumpTimeCounter = 0;
 		}
 
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            this.isBow = true;
+        }
+        if (Input.GetKeyUp(KeyCode.Z))
+        {
+            this.isBow = false;
+        }
+
 		if (isGround) {
 			jumpTimeCounter = jumpTime;
 		}
 		myAnimator.SetFloat ("MovingSpeed", myRigidBody.velocity.x);
 		myAnimator.SetBool ("isGround", isGround);
+        myAnimator.SetBool("isBow", isBow);
 	}
 
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "Obstacle") {
-            Debug.Log("collidded");
+            Debug.Log("Anda menabrak sebuah obstacle, game over!");
             //theGameManager.RestartGame ();
 			FindObjectOfType<ScoreManager>().scoreIncreasing=false;
 			SceneManager.LoadScene("Game Over");

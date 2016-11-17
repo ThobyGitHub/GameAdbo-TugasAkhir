@@ -18,7 +18,7 @@ public class Obstacle : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log("masuk sini");
+        Debug.Log("Anda melewati sebuah obstacle :)");
         if (other.gameObject.name == "Player")
         {
             CreateObstacle();
