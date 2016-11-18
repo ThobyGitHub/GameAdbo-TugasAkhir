@@ -1,0 +1,13 @@
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_obj\Debug\New Unity Project.CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_obj\Debug\Assembly-CSharp.dll
+C:\Users\Joshua Riyadi\Documents\GitHub\GameAdbo-TugasAkhir\GAME BARU\EndlessRUNNER GGWP\New Unity Project\Temp\UnityVS_obj\Debug\Assembly-CSharp.pdb

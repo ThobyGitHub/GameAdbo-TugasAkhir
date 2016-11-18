@@ -14,12 +14,12 @@ public class GameGenerator : MonoBehaviour {
 	void Start () {
 		platformStartPoint = platformGenerator.position;
 		playerStartPoint = thePlayer.transform.position;
-        themeMusic.play();
+        themeMusic.Play();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (themeMusic.isPlaying == false) { themeMusic.play(); }
+        if (themeMusic.isPlaying == false) { themeMusic.Play(); }
 	}
 
 	public void RestartGame(){

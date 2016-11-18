@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour {
 
 	private Rigidbody2D myRigidBody;
 	private Collider2D myCollider;
+    private BoxCollider2D boxCollider;
 	private Animator myAnimator;
 
 	public GameGenerator theGameManager;
@@ -36,6 +37,7 @@ public class PlayerController : MonoBehaviour {
 		jumpTimeCounter = jumpTime;
 		speedMilestoneCount = speedIncreaseMilestone;
         this.isBow = false;
+        this.boxCollider= GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -70,10 +72,12 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Z))
         {
             this.isBow = true;
+            this.boxCollider.size = new Vector2(0.4609375f, 0.3f);
         }
         if (Input.GetKeyUp(KeyCode.Z))
         {
             this.isBow = false;
+            this.boxCollider.size = new Vector2(0.4609375f, 0.53125f);
         }
 
 		if (isGround) {
@@ -88,8 +92,8 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.tag == "Obstacle") {
             Debug.Log("Anda menabrak sebuah obstacle, game over!");
             //theGameManager.RestartGame ();
-            FindObjectOfType<GameGenerator>().themeMusic.Stop();
-            FindObjectOfType<GameGenerator>().gameOverMusic.Play();
+            //FindObjectOfType<GameGenerator>().themeMusic.Stop();
+            //FindObjectOfType<GameGenerator>().gameOverMusic.Play();
             FindObjectOfType<ScoreManager>().scoreIncreasing=false;
 			SceneManager.LoadScene("Game Over");
 
