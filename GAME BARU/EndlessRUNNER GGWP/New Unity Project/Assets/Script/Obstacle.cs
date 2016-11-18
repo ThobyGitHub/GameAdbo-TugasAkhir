@@ -16,8 +16,8 @@ public class Obstacle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //posNow = new Vector2(GameObject.Find("Player").transform.position.x, posY);
-		posNow = new Vector2(GameObject.Find("Player").transform.position.x, transform.position.y);
+        posNow = new Vector2(GameObject.Find("Player").transform.position.x, posY);
+		
     }
 
     void OnTriggerEnter2D(Collider2D other) {
@@ -33,14 +33,14 @@ public class Obstacle : MonoBehaviour {
         idx = Random.Range(0, obstacle.Length);
         if (idx == 1)
         {
-			//posNow = new Vector2(posNow.x + Random.Range(20, 30), posY+Random.Range(-0.53f, 0.57f));
-			posNow = new Vector2(posNow.x + Random.Range(20, 30),transform.position.y );
+			posNow = new Vector2(posNow.x + Random.Range(20, 30), posY-Random.Range(0f, 2.63f));
+			//posNow = new Vector2(posNow.x + Random.Range(20, 30),transform.position.y );
            Instantiate(obstacle[idx], posNow, Quaternion.identity);
         }
         else
         {
-			//posNow = new Vector2(posNow.x + Random.Range(20, 30), posY+Random.Range(-0.53f, 0.57f));
-			posNow = new Vector2(posNow.x + Random.Range(20, 30),transform.position.y );
+			posNow = new Vector2(posNow.x + Random.Range(20, 30), posY-Random.Range(0f, 2.63f));
+			//posNow = new Vector2(posNow.x + Random.Range(20, 30),transform.position.y );
             Instantiate(obstacle[idx], posNow, Quaternion.identity);
         }
         //posNow += Vector2.right * Random.Range(10, 20);
