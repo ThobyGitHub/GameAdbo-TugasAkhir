@@ -4,7 +4,8 @@ using System.Collections;
 public class GameGenerator : MonoBehaviour {
 	public Transform platformGenerator;
 	private Vector3 platformStartPoint;
-
+    public AudioSource themeMusic;
+    public AudioSource gameOverMusic;
 	public PlayerController thePlayer;
 	private Vector3 playerStartPoint;
     private PlatformDestroyer[] platformList;
@@ -13,12 +14,12 @@ public class GameGenerator : MonoBehaviour {
 	void Start () {
 		platformStartPoint = platformGenerator.position;
 		playerStartPoint = thePlayer.transform.position;
-
+        themeMusic.play();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (themeMusic.isPlaying == false) { themeMusic.play(); }
 	}
 
 	public void RestartGame(){

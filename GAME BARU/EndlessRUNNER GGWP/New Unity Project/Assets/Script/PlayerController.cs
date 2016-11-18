@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour {
 
 	[SerializeField] private float jumpTime;
 	private float jumpTimeCounter;
+    public AudioSource jumpSound;
 
 	private Rigidbody2D myRigidBody;
 	private Collider2D myCollider;
@@ -50,17 +51,21 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			if (isGround) {
 				myRigidBody.velocity = new Vector2 (myRigidBody.velocity.x, jumpForce);
-			}
-		}
+                jumpSound.Play();
+            }
+            
+        }
 		if (Input.GetKey (KeyCode.Space)) {
 			if (jumpTimeCounter > 0) { 
 				myRigidBody.velocity = new Vector2 (myRigidBody.velocity.x, jumpForce);
 				jumpTimeCounter -= Time.deltaTime;
-			}
+                jumpSound.Play();
+            }
 		}
 		if (Input.GetKeyUp (KeyCode.Space)) {
 			jumpTimeCounter = 0;
-		}
+            jumpSound.Play();
+        }
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
@@ -83,7 +88,9 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.tag == "Obstacle") {
             Debug.Log("Anda menabrak sebuah obstacle, game over!");
             //theGameManager.RestartGame ();
-			FindObjectOfType<ScoreManager>().scoreIncreasing=false;
+            FindObjectOfType<GameGenerator>().themeMusic.Stop();
+            FindObjectOfType<GameGenerator>().gameOverMusic.Play();
+            FindObjectOfType<ScoreManager>().scoreIncreasing=false;
 			SceneManager.LoadScene("Game Over");
 
 		}

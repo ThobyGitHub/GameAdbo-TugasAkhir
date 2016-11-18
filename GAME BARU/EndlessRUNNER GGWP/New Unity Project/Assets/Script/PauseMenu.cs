@@ -6,11 +6,14 @@ public class PauseMenu : MonoBehaviour {
 	public void pause(){
 		Time.timeScale = 0f;
 		pauseMenu.gameObject.SetActive (true);
-	}
+        FindObjectOfType<GameGenerator>().themeMusic.Pause();
+
+    }
 	public void resume(){
 		Time.timeScale = 1f;
 		pauseMenu.gameObject.SetActive (false);
-	}
+        FindObjectOfType<GameGenerator>().themeMusic.UnPause();
+    }
 	public void restart(){
 		Time.timeScale = 1f;
 		pauseMenu.gameObject.SetActive (false);
