@@ -8,15 +8,15 @@ public class Obstacle : MonoBehaviour {
 
     private int idx;
     private Vector2 posNow;
-	private float posY;
+
     void Start () {
         posNow = GameObject.Find("Obstacle").transform.position;
-		posY = 1.25f;
+		 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        posNow = new Vector2(GameObject.Find("Player").transform.position.x, posY);
+		posNow = new Vector2(GameObject.Find("Player").transform.position.x, 1.25f);
 		
     }
 
@@ -33,13 +33,13 @@ public class Obstacle : MonoBehaviour {
         idx = Random.Range(0, obstacle.Length);
         if (idx == 1)
         {
-			posNow = new Vector2(posNow.x + Random.Range(20, 30), posY-Random.Range(0f, 2.63f));
+			posNow = new Vector2(posNow.x + Random.Range(25, 30), 1.25f-Random.Range(0f, 2.53f));
 			//posNow = new Vector2(posNow.x + Random.Range(20, 30),transform.position.y );
            Instantiate(obstacle[idx], posNow, Quaternion.identity);
         }
         else
         {
-			posNow = new Vector2(posNow.x + Random.Range(20, 30), posY-Random.Range(0f, 2.63f));
+			posNow = new Vector2(posNow.x + Random.Range(25, 30), 1.25f-Random.Range(0f, 2.53f));
 			//posNow = new Vector2(posNow.x + Random.Range(20, 30),transform.position.y );
             Instantiate(obstacle[idx], posNow, Quaternion.identity);
         }
