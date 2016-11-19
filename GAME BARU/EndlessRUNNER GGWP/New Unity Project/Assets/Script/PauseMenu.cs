@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour {
-	public GameObject pauseMenu;
+	[SerializeField] private GameObject pauseMenu;
 	public void pause(){
 		Time.timeScale = 0f;
 		pauseMenu.gameObject.SetActive (true);

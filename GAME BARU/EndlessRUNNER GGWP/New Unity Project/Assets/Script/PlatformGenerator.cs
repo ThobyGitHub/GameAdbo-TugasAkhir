@@ -2,13 +2,13 @@
 using System.Collections;
 
 public class PlatformGenerator : MonoBehaviour {
-	public GameObject thePlatform;
-	public Transform generationPoint;
-	public float distanceBetween;
+	[SerializeField] private GameObject thePlatform;
+	[SerializeField] private Transform generationPoint;
+	[SerializeField] private float distanceBetween;
 
 	private float platformWidth;
 
-	public ObjectPooler theObjectPool;
+	[SerializeField] private ObjectPooler theObjectPool;
 	// Use this for initialization
 	void Start () {
 		platformWidth = thePlatform.GetComponent<BoxCollider2D> ().size.x;

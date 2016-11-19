@@ -1,14 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\..\..\Desktop\Yg mw dicomit\DodoObstacle.cs">
     <Files>
+      <File FileName="..\..\..\..\..\..\Desktop\Yg mw dicomit\DodoObstacle.cs" Line="33" Column="60" />
+      <File FileName="Assets\Script\Obstacle.cs" Line="36" Column="61" />
       <File FileName="Assets\Script\PauseMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\PlayerController.cs" Line="30" Column="5" />
+      <File FileName="Assets\Script\PlayerController.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\GameOverMenu.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\ScoreManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\GameGenerator.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\BackgroundScrollScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Obstacle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\BarelObstacle.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\..\..\..\Desktop\Yg mw dicomit\BarrelObstacle.cs" Line="45" Column="69" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

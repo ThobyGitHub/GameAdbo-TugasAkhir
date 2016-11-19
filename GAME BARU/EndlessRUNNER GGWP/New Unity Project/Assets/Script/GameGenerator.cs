@@ -2,11 +2,11 @@
 using System.Collections;
 
 public class GameGenerator : MonoBehaviour {
-	public Transform platformGenerator;
+	[SerializeField] private Transform platformGenerator;
 	private Vector3 platformStartPoint;
-    public AudioSource themeMusic;
-    public AudioSource gameOverMusic;
-	public PlayerController thePlayer;
+	[SerializeField] private AudioSource themeMusic;
+	 
+	[SerializeField] private PlayerController thePlayer;
 	private Vector3 playerStartPoint;
     private PlatformDestroyer[] platformList;
 
@@ -38,5 +38,7 @@ public class GameGenerator : MonoBehaviour {
 		platformGenerator.position = platformStartPoint;
 		thePlayer.gameObject.SetActive (true);
 	}
+
+
 
 }

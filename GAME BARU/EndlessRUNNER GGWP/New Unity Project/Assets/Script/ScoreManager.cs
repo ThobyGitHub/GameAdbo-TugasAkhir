@@ -4,15 +4,15 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour {
 
-	public Text scoreText;
-	public Text highScoreText;
+	[SerializeField]private Text scoreText;
+	[SerializeField]private Text highScoreText;
 
 	private float scoreCount;
-	public float highScoreCount;
+	private float highScoreCount;
 
-	public float pointPerSec;
+	[SerializeField]private float pointPerSec;
 
-	public bool scoreIncreasing;
+	[SerializeField]private bool scoreIncreasing;
 
 	// Use this for initialization
 	void Start () {
@@ -38,5 +38,9 @@ public class ScoreManager : MonoBehaviour {
 		highScoreText.text = "High Score: " + Mathf.Round(highScoreCount);
 
 
+	}
+
+	public void setscoreIncreasing(bool scoreIncreasing){
+		this.scoreIncreasing = scoreIncreasing;
 	}
 }

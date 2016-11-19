@@ -19,14 +19,14 @@ public class PlayerController : MonoBehaviour {
 
 	[SerializeField] private float jumpTime;
 	private float jumpTimeCounter;
-    public AudioSource jumpSound;
+	[SerializeField] private AudioSource jumpSound;
 
 	private Rigidbody2D myRigidBody;
 	private Collider2D myCollider;
     private BoxCollider2D boxCollider;
 	private Animator myAnimator;
 
-	public GameGenerator theGameManager;
+	[SerializeField] private GameGenerator theGameManager;
 
 
     // Use this for initialization
@@ -61,12 +61,12 @@ public class PlayerController : MonoBehaviour {
 			if (jumpTimeCounter > 0) { 
 				myRigidBody.velocity = new Vector2 (myRigidBody.velocity.x, jumpForce);
 				jumpTimeCounter -= Time.deltaTime;
-                jumpSound.Play();
+                
             }
 		}
 		if (Input.GetKeyUp (KeyCode.Space)) {
 			jumpTimeCounter = 0;
-            jumpSound.Play();
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Z))
@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour {
             //theGameManager.RestartGame ();
             //FindObjectOfType<GameGenerator>().themeMusic.Stop();
             //FindObjectOfType<GameGenerator>().gameOverMusic.Play();
-            FindObjectOfType<ScoreManager>().scoreIncreasing=false;
+			FindObjectOfType<ScoreManager>().setscoreIncreasing(false);
 			SceneManager.LoadScene("Game Over");
 
 		}

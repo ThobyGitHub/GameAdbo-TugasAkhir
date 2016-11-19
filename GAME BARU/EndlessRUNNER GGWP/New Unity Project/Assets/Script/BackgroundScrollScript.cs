@@ -3,8 +3,8 @@ using System.Collections;
 
 public class BackgroundScrollScript : MonoBehaviour {
 
-	float offset;
-	public float speed;
+	[SerializeField] private float offset;
+	[SerializeField] private float speed;
 
 	// Update is called once per frame
 	void Update () {

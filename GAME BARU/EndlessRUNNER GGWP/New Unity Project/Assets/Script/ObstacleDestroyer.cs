@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ObstacleDestroyer : MonoBehaviour {
 
-	public GameObject platformDestructionPoint;
+	[SerializeField] private GameObject platformDestructionPoint;
 
 	// Use this for initialization
 	void Start () {

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CameraController : MonoBehaviour {
-	public PlayerController thePlayer;
+	[SerializeField] private PlayerController thePlayer;
 
 	private Vector3 lastPlayerPosition;
 	private float distanceToMove;

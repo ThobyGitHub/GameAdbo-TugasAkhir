@@ -46,8 +46,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\BackgroundScrollScript.cs" />
-     <Compile Include="Assets\Script\BarelObstacle.cs" />
+     <Compile Include="Assets\Script\BarrelObstacle.cs" />
      <Compile Include="Assets\Script\CameraController.cs" />
+     <Compile Include="Assets\Script\DodoObstacle.cs" />
      <Compile Include="Assets\Script\GameGenerator.cs" />
      <Compile Include="Assets\Script\GameOverMenu.cs" />
      <Compile Include="Assets\Script\MainMenu.cs" />

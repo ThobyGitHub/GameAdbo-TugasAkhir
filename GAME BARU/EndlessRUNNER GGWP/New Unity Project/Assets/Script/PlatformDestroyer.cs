@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PlatformDestroyer : MonoBehaviour {
-	public GameObject platformDestructionPoint;
+	[SerializeField] private GameObject platformDestructionPoint;
 
 	// Use this for initialization
 	void Start () {

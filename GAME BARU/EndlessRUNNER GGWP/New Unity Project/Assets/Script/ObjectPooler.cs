@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class ObjectPooler : MonoBehaviour {
-	public GameObject pooledObject;
-	public int pooledAmount;
+	[SerializeField] private GameObject pooledObject;
+	[SerializeField] private int pooledAmount;
 
-	List<GameObject> pooledObjects;
+	private List<GameObject> pooledObjects;
 
 	// Use this for initialization
 	void Start () {
