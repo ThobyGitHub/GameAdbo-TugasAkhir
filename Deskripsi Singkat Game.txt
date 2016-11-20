@@ -1,0 +1,36 @@
+Deskripsi singkat tugas membuat game Runner !
+
+Game ini merupakan game serupa seperti t-rex runner milik google chrome.
+Dalam game ini terdapat beberapa objek; seperti : player, obstacle
+yang terbagi menjadi obstacle burung dodo dan obstacle barrel.
+
+Kelas-kelas yang digunakan, antara lain :
+1.  Player, dalam kelas ini memiliki atribut GameObject yang merupakan player;
+    dan dalam kelas ini terdapat fungsi-fungsi untuk mengartur kecepatan
+    berlari dari player, animasi-animasi pada player(lompat, menunduk, dsb),
+    serta mengatur keadaan game over jika player terkena obstacle.
+
+2.  Interface obstacle, yaitu interface yang berguna untuk membuat obstacle-obstacle
+    antara lain: obstacle burung dan obstacle barrel.
+
+3.  Kelas obstacle burung dan kelas obstacle barrel; kedua kelas ini mengimplementasikan
+    interface obstacle, dengan perbedaannya hanya pada posisi sumbu y pada burung
+    yang di random, sedangkan posisi sumbu y pada barrel tidak.
+    Pada kedua kelas ini, terdapat method yang mengatur generate obstacle, sehingga
+    obstacle tidak akan pernah habis, sebelum player game over.
+
+4.  Kelas Background (script), yaitu untuk mengatur tampilan background saat
+    game dimainkan, dalam script ini, diatur agar background dapat terlihat
+    bergerak bersamaan dengan player, sehingga terlihat lebih nyata.
+
+5.  Kelas ScoreManager yaitu kelas yang berfungsi untuk mengatur score game.
+    score akan bertambah, seiring waktu permainan yang semakin bertambah. Serta akan
+    mencatat high score yaitu score tertinggi yang pernah diraih pemain.
+    dalam kelas ini berfungsi juga untuk mengatur tampilan score dan highscore
+    dalam permainan.
+
+6.  Kelas platform generator untuk menduplikat / men generate platform,
+    seperti ground.
+
+7.  Kelas platform destroyer untuk menghilangkan / destroy platform yang sudah
+    tidak terpakai, agar tidak menghabiskan memory.
