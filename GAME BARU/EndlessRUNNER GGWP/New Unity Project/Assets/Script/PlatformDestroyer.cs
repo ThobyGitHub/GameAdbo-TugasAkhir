@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// PlatformDestroyer sebagai kelas untuk menghapus platform tempat karakter berjalan
+/// </summary>
 public class PlatformDestroyer : MonoBehaviour {
+    /// <summary>
+    /// Atribut platformDestructionPoint dengan tipe GameObject untuk menentukan platform mana yang harus di hapus
+    /// </summary>
 	[SerializeField] private GameObject platformDestructionPoint;
 
 	// Use this for initialization

@@ -1,32 +1,75 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
-
+/// <summary>
+/// PlayerController sebagai kelas untuk mengatur pergerakan player
+/// </summary>
 public class PlayerController : MonoBehaviour {
-	
+	/// <summary>
+    /// atribut moveSpeed dengan tipe float sebagai kecepatan berjalannya karakter
+    /// </summary>
 	[SerializeField] private float moveSpeed;
+    /// <summary>
+    /// atribut speedMultiply dengan tipe float untuk mempercepat jalannya karakter
+    /// </summary>
 	[SerializeField] private float speedMultiply;
 
+    /// <summary>
+    /// atribut dengan tipe float sebagai batas kecepatan mulai bertambah
+    /// </summary>
 	[SerializeField] private float speedIncreaseMilestone;
+    /// <summary>
+    /// atribut untuk menyimpan jarak saat kecepatan bertambah
+    /// </summary>
 	private float speedMilestoneCount;
 
-
+    /// <summary>
+    /// atribut jumpForce untuk menentukan tinggi karakter lompat
+    /// </summary>
 	[SerializeField] private float jumpForce;
 
+    /// <summary>
+    /// atribut isGround untuk mengetahui karakter sedang berada di tanah
+    /// </summary>
 	[SerializeField] private bool isGround;
+    /// <summary>
+    /// 
+    /// </summary>
 	[SerializeField] private bool isBow;
+    /// <summary>
+    /// atribut whatIsGround untuk mengetahui layer mana yang ground
+    /// </summary>
 	[SerializeField] private LayerMask whatIsGround;
 
+    /// <summary>
+    /// atribut jumpTime untuk waktu karakter di udara
+    /// </summary>
 	[SerializeField] private float jumpTime;
+    /// <summary>
+    /// 
+    /// </summary>
 	private float jumpTimeCounter;
-	[SerializeField] private AudioSource jumpSound;
+    /// <summary>
+    /// atribut jumpSound untuk suara yang digunakan saat karakter lompat
+    /// </summary>
+    [SerializeField] private AudioSource jumpSound;
 
+    /// <summary>
+    /// atribut myRigidBody dengan tipe Rigidbody2D
+    /// </summary>
 	private Rigidbody2D myRigidBody;
+    /// <summary>
+    /// atribut myCollider dengan tipe Collider2D
+    /// </summary>
 	private Collider2D myCollider;
+    /// <summary>
+    /// atribut boxCollider dengan tipe BoxCollider2D
+    /// </summary>
     private BoxCollider2D boxCollider;
+    /// <summary>
+    /// atribut myAnimator untuk animasi karakter
+    /// </summary>
 	private Animator myAnimator;
-
-	[SerializeField] private GameGenerator theGameManager;
 
 
     // Use this for initialization
@@ -88,12 +131,13 @@ public class PlayerController : MonoBehaviour {
         myAnimator.SetBool("isBow", isBow);
 	}
 
+    /// <summary>
+    /// OnCollisionEnter2D dengan tipe void digunakan saat karakter menabrak obstacle atau game over
+    /// </summary>
+    /// <param name="other"></param>
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "Obstacle") {
             Debug.Log("Anda menabrak sebuah obstacle, game over!");
-            //theGameManager.RestartGame ();
-            //FindObjectOfType<GameGenerator>().themeMusic.Stop();
-            //FindObjectOfType<GameGenerator>().gameOverMusic.Play();
 			FindObjectOfType<ScoreManager>().setscoreIncreasing(false);
 			SceneManager.LoadScene("Game Over");
 

@@ -1,10 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// CameraController adalah kelas untuk mengatur pergerakan camera saat game dijalankan
+/// </summary>
 public class CameraController : MonoBehaviour {
+    /// <summary>
+    /// atribut thePlayer sebagai karakter yang digunakan dengan tipe PlayerController
+    /// </summary>
 	[SerializeField] private PlayerController thePlayer;
 
+    /// <summary>
+    /// atribut lastPlayerPosition dengan tipe Vector3 untuk menyimpan posisi terakhir karakter berada
+    /// </summary>
 	private Vector3 lastPlayerPosition;
+
 	private float distanceToMove;
 
 	// Use this for initialization
