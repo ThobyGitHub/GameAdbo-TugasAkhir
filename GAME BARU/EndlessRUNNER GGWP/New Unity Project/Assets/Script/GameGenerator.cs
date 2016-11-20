@@ -8,10 +8,12 @@ public class GameGenerator : MonoBehaviour {
     /// atribut untuk menentukan letak membuat platform
     /// </summary>
 	[SerializeField] private Transform platformGenerator;
+
     /// <summary>
     /// atribut Vector3 sebagai titik awal yang harus dilewati untuk mulai membuat platform baru
     /// </summary>
 	private Vector3 platformStartPoint;
+
     /// <summary>
     /// atribut untuk musik selama permainan berlangsung
     /// </summary>
@@ -21,10 +23,12 @@ public class GameGenerator : MonoBehaviour {
     /// atribut karakter yang digunakan dengan PlayerController
     /// </summary>
 	[SerializeField] private PlayerController thePlayer;
+
     /// <summary>
     /// atribut untuk menentukan posisi awal karakter saat awal permainan
     /// </summary>
 	private Vector3 playerStartPoint;
+
     /// <summary>
     /// list untuk menghapus platform yang sudah dilewati
     /// </summary>

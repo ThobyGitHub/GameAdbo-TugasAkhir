@@ -2,8 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// Object pooler.
+/// kelas ini dipakai untuk melakukan generate Object ground,
+/// </summary>
 public class ObjectPooler : MonoBehaviour {
+	/// <summary>
+	/// The pooled object.
+	/// object yang akan digenerate. (ground)
+	/// </summary>
 	[SerializeField] private GameObject pooledObject;
+
+	/// <summary>
+	/// The pooled amount.
+	/// jumlah object yang digenerate.
+	/// </summary>
 	[SerializeField] private int pooledAmount;
 
 	private List<GameObject> pooledObjects;
@@ -18,6 +31,11 @@ public class ObjectPooler : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Gets the pooled object.
+	/// method untuk mengembalikan pooled object
+	/// </summary>
+	/// <returns>The pooled object.</returns>
 	public GameObject GetPooledObject(){
 		for (int i = 0; i < pooledObjects.Count; i++) {
 			if (!pooledObjects [i].activeInHierarchy) {

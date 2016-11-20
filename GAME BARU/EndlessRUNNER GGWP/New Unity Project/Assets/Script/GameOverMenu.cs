@@ -15,6 +15,7 @@ public class GameOverMenu : MonoBehaviour {
 	void Start(){
 		gameOverMusic.Play ();
 	}
+
     /// <summary>
     /// restart dengan tipe void untuk mengulang permainan
     /// </summary>

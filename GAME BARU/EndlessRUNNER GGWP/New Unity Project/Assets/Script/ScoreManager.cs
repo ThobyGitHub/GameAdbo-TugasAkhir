@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+
 /// <summary>
 /// ScoreManager adalah kelas untuk menangani perhitungan skor yang di dapat selama permainan berlangsung
 /// </summary>
@@ -19,6 +20,7 @@ public class ScoreManager : MonoBehaviour {
     /// atribut untuk menyimpan skor sementara
     /// </summary>
 	private float scoreCount;
+
     /// <summary>
     /// atribut untuk menyimpan skor tertinggi sementara
     /// </summary>

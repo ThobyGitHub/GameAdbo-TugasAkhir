@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour {
     /// atribut moveSpeed dengan tipe float sebagai kecepatan berjalannya karakter
     /// </summary>
 	[SerializeField] private float moveSpeed;
+
     /// <summary>
     /// atribut speedMultiply dengan tipe float untuk mempercepat jalannya karakter
     /// </summary>
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour {
     /// atribut dengan tipe float sebagai batas kecepatan mulai bertambah
     /// </summary>
 	[SerializeField] private float speedIncreaseMilestone;
+
     /// <summary>
     /// atribut untuk menyimpan jarak saat kecepatan bertambah
     /// </summary>
@@ -30,12 +32,16 @@ public class PlayerController : MonoBehaviour {
 
     /// <summary>
     /// atribut isGround untuk mengetahui karakter sedang berada di tanah
+	/// true jika ya, dan false jika tidak.
     /// </summary>
 	[SerializeField] private bool isGround;
+
     /// <summary>
-    /// 
+    /// atribut isBow digunakan untuk mengetahui jika karakter sedang menunduk.
+	/// true jika ya, dan false jika tidak.
     /// </summary>
 	[SerializeField] private bool isBow;
+
     /// <summary>
     /// atribut whatIsGround untuk mengetahui layer mana yang ground
     /// </summary>
@@ -45,10 +51,12 @@ public class PlayerController : MonoBehaviour {
     /// atribut jumpTime untuk waktu karakter di udara
     /// </summary>
 	[SerializeField] private float jumpTime;
+
     /// <summary>
     /// 
     /// </summary>
 	private float jumpTimeCounter;
+
     /// <summary>
     /// atribut jumpSound untuk suara yang digunakan saat karakter lompat
     /// </summary>
@@ -58,14 +66,17 @@ public class PlayerController : MonoBehaviour {
     /// atribut myRigidBody dengan tipe Rigidbody2D
     /// </summary>
 	private Rigidbody2D myRigidBody;
+
     /// <summary>
     /// atribut myCollider dengan tipe Collider2D
     /// </summary>
 	private Collider2D myCollider;
+
     /// <summary>
     /// atribut boxCollider dengan tipe BoxCollider2D
     /// </summary>
     private BoxCollider2D boxCollider;
+
     /// <summary>
     /// atribut myAnimator untuk animasi karakter
     /// </summary>

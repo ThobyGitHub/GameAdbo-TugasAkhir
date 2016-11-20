@@ -14,6 +14,12 @@ public class CameraController : MonoBehaviour {
     /// </summary>
 	private Vector3 lastPlayerPosition;
 
+	/// <summary>
+	/// The distance to move.
+	/// merupakan atrobut yang menyimpan jarak player bergerak,
+	/// sehingga agar camera dapat mengikuti player, 
+	/// posisi.x dari camera akan ditambahkan dengan atribut ini.
+	/// </summary>
 	private float distanceToMove;
 
 	// Use this for initialization

@@ -8,10 +8,12 @@ public class PlatformGenerator : MonoBehaviour {
     /// atribut untuk menunjukan objek mana yang akan dibuat 
     /// </summary>
 	[SerializeField] private GameObject thePlatform;
+
     /// <summary>
     /// atribut untuk menentukan titik awal membuat objek
     /// </summary>
 	[SerializeField] private Transform generationPoint;
+
     /// <summary>
     /// atribut untuk menentukan jarak antar platform
     /// </summary>

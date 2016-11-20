@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+
 /// <summary>
 /// MainMenu sebagai kelas utama saat permainan dimulai 
 /// bisa memilih untuk memulai permainan
@@ -13,13 +14,12 @@ public class MainMenu : MonoBehaviour {
     /// </summary>
 	public void PlayGame(){
 		SceneManager.LoadScene ("GGWP");
-			}
+	}
 
     /// <summary>
     /// QuitGame dengan tipe void untuk keluar dari permainan
     /// </summary>
 	public void QuitGame(){
-
 		Application.Quit ();
 	}
 }
